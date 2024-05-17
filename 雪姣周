@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+	</head>
+
+
+	<body>
+		<div id="main" style="width: 600px;height:400px;"></div>
+		<script type="text/javascript">
+			var myChart = echarts.init(document.getElementById('main'))
+			var option = {
+				title:{x:222,text:'男性和女性身高、体重分布'},
+				color:['blue','green'],
+				xAxis:{scale:true,name:'身高(cm)',color:'red'},
+				yAxis:{scale:true,name:'体重(kg)'},
+				series:[{
+					type:'scatter',symbolSize:20,
+					data:[
+						[167.0,64.6],[177.8,74.8],[159.5,58.0],[169.5,68.0],
+						[163.0,63.6],[157.5,53.2],[164.5,65.0],[163.5,62.0],
+						[171.2,65.1],[161.6,58.9],[167.4,67.7],[167.5,63.0],
+						[181.1,76.0],[165.0,60.2],[174.5,70.0],[71.5,68.0],
+					],
+				}],
+			};
+			myChart.setOption(option)
+		</script>
+	</body>
+</html>
+			
