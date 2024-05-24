@@ -14,7 +14,7 @@
 		<script type="text/javascript">
 			var myChart = echarts.init(document.getElementById('main'))
 			var option = {
-				title:{x:222,text:'男性和女性身高、体重分布'},
+				title:{x:222,text:'男、体重分布'},
 				color:['blue','green'],
 				xAxis:{scale:true,name:'身高(cm)',color:'red'},
 				yAxis:{scale:true,name:'体重(kg)'},
